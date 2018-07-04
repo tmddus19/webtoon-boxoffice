@@ -1,0 +1,10 @@
+<h1>웹툰리스트</h1>
+<p>다음웹툰 리스트</p>
+
+<% @webtoons.each do |w|%>
+    <img src="<%= w.image %>"><br>
+    제목 : <%= w.title %><br>
+    소개 : <%= w.intro %><br>
+    장르 : <%= w.genre %><br>
+    평점 : <%= w.score %><br></p>
+<% end %>

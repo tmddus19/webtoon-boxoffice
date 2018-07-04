@@ -1,0 +1,10 @@
+<h1><%= @date %></h1>
+
+<% @movies.each do |m| %>
+    <p>제목 : <%= m["title"] %><br>
+    순위 : <%= m["rank"] %><br>
+    누적매출액 : <%= m["sales"] %><br>
+    누적관객수 : <%= m["audi"] %><br></p>
+    
+<% end %>
+    
